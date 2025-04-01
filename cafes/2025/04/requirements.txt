@@ -1,0 +1,3 @@
+# requirements for qrcode generation - cf. https://segno.readthedocs.io/en/latest/artistic-qrcodes.html
+segno
+qrcode-artistic
