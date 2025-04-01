@@ -21,9 +21,9 @@
 % Spacing before and inside list environments to add white space before lists and between items inside lists
 \makeatletter
 \def\@listi{\leftmargin\leftmarginii
-\topsep 1ex % Spacing before lists
-\parsep 0\p@ \@plus\p@
-\itemsep 6pt} % Spacing between items
+	\topsep 1ex % Spacing before lists
+	\parsep 0\p@ \@plus\p@
+	\itemsep 6pt} % Spacing between items
 \makeatother
 
 \usecaptiontemplate{\small\structure{\insertcaptionname~\insertcaptionnumber: }\insertcaption} % A fix for figure numbering
@@ -193,68 +193,68 @@
 % build the poster title
 %==============================================================================
 \setbeamertemplate{headline}{
- \leavevmode
-  \begin{columns}
-   \begin{column}{\linewidth}
+	\leavevmode
+	\begin{columns}
+		\begin{column}{\linewidth}
 
-%    \raggedleft
-%    \usebeamercolor{title in headline}{\Large \hspace{-3.735in}\textbf{\inserttitle}}
-%    \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
-%    \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
-   \end{column}
-  \end{columns}
+			%    \raggedleft
+			%    \usebeamercolor{title in headline}{\Large \hspace{-3.735in}\textbf{\inserttitle}}
+			%    \usebeamercolor{author in headline}{\color{fg}\Large{\insertauthor}\\[1ex]}
+			%    \usebeamercolor{institute in headline}{\color{fg}\large{\insertinstitute}\\[1ex]}
+		\end{column}
+	\end{columns}
 }
 
 % Block definition
 \setbeamertemplate{block begin}
 {
-  \par\vskip\medskipamount
-  \begin{beamercolorbox}[colsep*=0ex,dp={2ex}]{block title}
-    \vskip0.25cm
-    \usebeamerfont{block title}\insertblocktitle
-  \end{beamercolorbox}
-  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}
-  \usebeamerfont{block body}
-  \vskip0.5cm
-  \begin{beamercolorbox}[colsep*=0ex,vmode]{block body}
-  \justifying
-}
+\par\vskip\medskipamount
+\begin{beamercolorbox}[colsep*=0ex,dp={2ex}]{block title}
+	\vspace{-0.5in}
+	\usebeamerfont{block title}\insertblocktitle
+\end{beamercolorbox}
+{\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}
+\usebeamerfont{block body}
+\vspace{-0.5in}
+\begin{beamercolorbox}[colsep*=0ex,vmode]{block body}
+	\justifying
+	}
 
-\setbeamertemplate{block end}
-{
-  \end{beamercolorbox}
-  \vskip\smallskipamount
+	\setbeamertemplate{block end}
+	{
+\end{beamercolorbox}
+\vskip\smallskipamount
 }
 
 % Alert block definition (with frame)
 \setbeamertemplate{block alerted begin}
 {
-  \par\vskip\medskipamount
-  \begin{beamercolorbox}[sep=0ex,rounded=true,center,dp={2ex}]{block alerted title}
-    \vskip0.6in
-    \usebeamerfont{block body}\insertblocktitle
-  \end{beamercolorbox}
-%  {\parskip0pt\par}
-%  \usebeamerfont{block body}
-%  \vskip-0.8cm
-%  \begin{beamercolorbox}[sep=0.5cm, rounded=true,center]{block alerted title}
-%  \setlength{\inboxwd}{\linewidth}
-%  \addtolength{\inboxwd}{-1cm}
-%  \begin{beamercolorbox}[rounded=true,wd={\inboxwd},center]{block alerted body}
-%  \setlength{\iinboxwd}{\inboxwd}
-%  \setlength{\inboxrule}{\inboxwd}
-%  \addtolength{\iinboxwd}{-0.5cm}
-%  \addtolength{\inboxrule}{0.5cm}
-%  \begin{center}
-%  \begin{minipage}{\iinboxwd}
-%  \justifying
+	\par\vskip\medskipamount
+	\begin{beamercolorbox}[sep=0ex,rounded=true,center,dp={2ex}]{block alerted title}
+		\vskip0.6in
+		\usebeamerfont{block body}\insertblocktitle
+	\end{beamercolorbox}
+	%  {\parskip0pt\par}
+	%  \usebeamerfont{block body}
+	%  \vskip-0.8cm
+	%  \begin{beamercolorbox}[sep=0.5cm, rounded=true,center]{block alerted title}
+	%  \setlength{\inboxwd}{\linewidth}
+	%  \addtolength{\inboxwd}{-1cm}
+	%  \begin{beamercolorbox}[rounded=true,wd={\inboxwd},center]{block alerted body}
+	%  \setlength{\iinboxwd}{\inboxwd}
+	%  \setlength{\inboxrule}{\inboxwd}
+	%  \addtolength{\iinboxwd}{-0.5cm}
+	%  \addtolength{\inboxrule}{0.5cm}
+	%  \begin{center}
+	%  \begin{minipage}{\iinboxwd}
+	%  \justifying
 }
 
 \setbeamertemplate{block alerted end}
 {
-%  \end{minipage}
-%  \end{center}
-%  \end{beamercolorbox}
-%  \end{beamercolorbox}
-  \vskip\smallskipamount
+	%  \end{minipage}
+	%  \end{center}
+	%  \end{beamercolorbox}
+	%  \end{beamercolorbox}
+	\vskip\smallskipamount
 }
